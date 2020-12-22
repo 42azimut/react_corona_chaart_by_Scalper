@@ -40,9 +40,8 @@ const Contents = () => {
                     findItem.recovered = recovered;
                     findItem.confirmed = confirmed;
                 }
-
                 return acc;
-            }, [])
+            }, [])   //초기값!! acc는 accumulate(누적, 축적하다)
             console.log(arr);
 
             const labels = arr.map(a => `${a.month+1}월`);
@@ -81,11 +80,8 @@ const Contents = () => {
                 },
             ]
        });
-    
-        
-        }
-
-        fetchEvents();
+    }
+    fetchEvents();
     }, [])
 
     return (
